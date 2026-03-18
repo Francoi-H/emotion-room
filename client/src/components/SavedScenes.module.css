@@ -1,0 +1,103 @@
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color var(--transition);
+}
+
+.item:hover {
+  border-color: var(--ink-dim);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.name {
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  padding: 2px 6px;
+  background: var(--surface-3);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--ink-dim);
+  white-space: nowrap;
+}
+
+.pub {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  padding: 2px 5px;
+  border: 1px solid var(--accent-dim);
+  color: var(--accent);
+  border-radius: 3px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.actions {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.btn {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 9px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-3);
+  color: var(--ink);
+  cursor: pointer;
+  transition: all var(--transition);
+  letter-spacing: 0.04em;
+}
+
+.btn:hover {
+  border-color: var(--ink-dim);
+  color: var(--ink);
+}
+
+.share:hover {
+  border-color: var(--accent-dim);
+  color: var(--accent);
+}
+
+.danger:hover {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.empty {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-dim);
+  text-align: center;
+  padding: 20px 0;
+}
